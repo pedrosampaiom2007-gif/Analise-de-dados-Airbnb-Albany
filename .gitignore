@@ -1,9 +1,7 @@
-# Dados brutos do Inside Airbnb (grandes; a fonte está documentada em docs/)
-data/raw/*
-!data/raw/.gitkeep
+# Dados brutos do Inside Airbnb (arquivos grandes)
+*.csv.gz
 
 # Python / Jupyter
 __pycache__/
 .ipynb_checkpoints/
 .venv/
-venv/
