@@ -42,7 +42,7 @@ O objetivo foi pegar uma base pública real, com dados sujos, deixá-la confiáv
 
 ### 5. Análises
 - Preço médio por bairro, considerando apenas bairros com pelo menos 10 anúncios.
-- Preço médio por tipo de acomodação nos 5 bairros com mais anúncios, agrupando por bairro e tipo.
+- Tabela dinâmica (pivot_table) com o preço médio por tipo de acomodação nos 5 bairros com mais anúncios.
 - Comparação de preço e nota entre Superhosts e demais anfitriões.
 - Ranking das comodidades mais comuns e comparação de preço entre anúncios com e sem piscina.
 - Quantidade de anfitriões que entraram na plataforma por ano.
@@ -53,7 +53,29 @@ O objetivo foi pegar uma base pública real, com dados sujos, deixá-la confiáv
 
 ## Resultados
 
-Em atualização.
+A base tinha 500 anúncios. Depois do tratamento ficaram 432 para a análise.
+
+**1. Bairros mais caros e mais baratos.** O Eighth Ward é o bairro mais caro, com média de US$ 258 por noite. O mais barato é o Eleventh Ward (US$ 102), cerca de 2,5 vezes menos.
+
+![Bairros mais caros](imagens/p1_bairros_mais_caros.png)
+![Bairros mais baratos](imagens/p1_bairros_mais_baratos.png)
+
+**2. Tipo de acomodação.** Nos 5 bairros com mais anúncios, a casa ou apartamento inteiro custa entre US$ 163 e US$ 211, e o quarto privativo entre US$ 79 e US$ 115. Em 4 desses bairros, o inteiro custa mais que o dobro do quarto.
+
+**3. Superhosts.** Cobram mais e são mais bem avaliados: US$ 162,65 contra US$ 147,24 (cerca de 10% a mais) e nota média de 4,89 contra 4,59.
+
+**4. Comodidades.** As mais comuns são as necessidades mais básicas: Wi-Fi (97% dos anúncios), alarme de fumaça (96%) e cozinha (89%). Anúncios com piscina custam em média 15% a mais, mas são só 5 anúncios.
+
+**5. Novos anfitriões.** A quantidade de anfitriões vem crescendo: foram 2 em 2014, 14 em 2022 e 32 em 2023. O ano de entrada foi estimado pela primeira avaliação, porque a data de cadastro veio vazia nesta extração.
+
+![Anfitriões por ano](imagens/p5_anfitrioes_por_ano.png)
+
+**6. Diária em reais.** A diária média é de US$ 154,83, o que equivale a R$ 825,97 (dólar a R$ 5,33).
+
+### Limitações
+- O preço analisado é o anunciado, não o valor pago pelo hóspede.
+- Os dados são de uma única extração.
+- Albany tem poucos anúncios, então algumas comparações (como a da piscina) têm poucos casos.
 
 ## Ferramentas
 
