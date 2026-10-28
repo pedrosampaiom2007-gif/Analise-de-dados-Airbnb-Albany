@@ -42,7 +42,7 @@ O objetivo foi pegar uma base pública real, com dados sujos, deixá-la confiáv
 
 ### 5. Análises
 - Preço médio por bairro, considerando apenas bairros com pelo menos 10 anúncios.
-- Tabela dinâmica com o preço médio por tipo de acomodação nos 5 bairros com mais anúncios.
+- Preço médio por tipo de acomodação nos 5 bairros com mais anúncios, agrupando por bairro e tipo.
 - Comparação de preço e nota entre Superhosts e demais anfitriões.
 - Ranking das comodidades mais comuns e comparação de preço entre anúncios com e sem piscina.
 - Quantidade de anfitriões que entraram na plataforma por ano.
