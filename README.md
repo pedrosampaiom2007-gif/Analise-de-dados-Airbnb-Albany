@@ -49,15 +49,37 @@ O objetivo foi pegar uma base pública real, com dados sujos, deixá-la confiáv
 - Conversão da diária média para dólar com a cotação obtida na API do Banco Central.
 
 ### 6. Exportação
-- Base tratada salva em CSV e em um banco SQLite, com uma consulta SQL de exemplo.
+- Base tratada salva em CSV e em um arquivo SQLite.
 
 ## Resultados
 
-Em atualização.
+A base tinha 48.247 anúncios. Depois do tratamento ficaram 36.178 para a análise.
+
+**1. Bairros mais caros e mais baratos.** O Leblon é o bairro mais caro, com média de R$ 716 por noite, seguido de São Conrado e Ipanema. O mais barato é o Encantado (R$ 180), quase 4 vezes menos.
+
+![Bairros mais caros](imagens/p1_bairros_mais_caros.png)
+![Bairros mais baratos](imagens/p1_bairros_mais_baratos.png)
+
+**2. Tipo de acomodação.** O apartamento inteiro é sempre o tipo mais caro: R$ 738 no Leblon e R$ 700 em Ipanema. Nesses bairros, o quarto privativo custa menos de 60% do apartamento inteiro.
+
+**3. Superhosts.** Não cobram mais (R$ 462 contra R$ 466), mas são mais bem avaliados: nota média de 4,89 contra 4,75.
+
+**4. Comodidades.** Wi-Fi (92% dos anúncios) e cozinha (91%) são as mais comuns. Anúncios com piscina custam em média 18% a mais (R$ 528 contra R$ 448).
+
+**5. Novos anfitriões.** A entrada de anfitriões cresceu muito a partir de 2022: foram 655 em 2021 e 4.256 em 2025. O ano de entrada foi estimado pela primeira avaliação, porque a data de cadastro veio vazia nesta extração.
+
+![Anfitriões por ano](imagens/p5_anfitrioes_por_ano.png)
+
+**6. Diária em dólar.** A diária média é de R$ 463,98, o que equivale a US$ 87,05 (dólar a R$ 5,33).
+
+### Limitações
+- O preço analisado é o anunciado, não o valor pago pelo hóspede.
+- Os dados são de uma única extração (22/09/2026).
+- A diferença de preço da piscina pode ter relação com outros fatores, como o bairro e o tamanho do imóvel.
 
 ## Ferramentas
 
-Python, pandas, NumPy, Matplotlib, Seaborn, Requests, SQLAlchemy, SQLite e Google Colab.
+Python, pandas, NumPy, Matplotlib, Seaborn, Requests e Google Colab.
 
 ## Fonte dos dados
 
