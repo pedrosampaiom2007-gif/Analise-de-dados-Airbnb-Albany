@@ -60,7 +60,7 @@ A base tinha 500 anúncios. Depois do tratamento ficaram 432 para a análise.
 ![Bairros mais caros](imagens/p1_bairros_mais_caros.png)
 ![Bairros mais baratos](imagens/p1_bairros_mais_baratos.png)
 
-**2. Tipo de acomodação.** Nos 5 bairros com mais anúncios, a casa ou apartamento inteiro custa entre US$ 163 e US$ 211, e o quarto privativo entre US$ 79 e US$ 115. Em 4 desses bairros, o inteiro custa mais que o dobro do quarto.
+**2. Tipo de acomodação.** Nos 5 bairros com mais anúncios, a casa ou apartamento inteiro custa entre US$ 163 e US$ 211, e o quarto privativo entre US$ 79 e US$ 115. Em 3 desses bairros, o inteiro custa mais que o dobro do quarto.
 
 **3. Superhosts.** Cobram mais e são mais bem avaliados: US$ 162,65 contra US$ 147,24 (cerca de 10% a mais) e nota média de 4,89 contra 4,59.
 
